@@ -18,6 +18,19 @@
 #
 # SPDX-License-Identifier: EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception
 
+# The default for text files
+* git-encoding=iso8859-1 zos-working-tree-encoding=ibm-1047
+
+# Specific types of files remain as ASCII
+*.xml git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+*.dtd git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+*.xsd git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+*.classpath git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+
+.gitattributes git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+.gitattributes.zos git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+.gitignore git-encoding=iso8859-1 zos-working-tree-encoding=iso8859-1
+
 # Binary files.
 *.bin binary
 *.bmp binary
